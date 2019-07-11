@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cssReset.css">
+    <link rel="stylesheet" href="mySyles.css">
+    <link rel="stylesheet" href="cellStyles.css">
+    <link rel="stylesheet" href="mySyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Volunteer app</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-logo">
+            <div class="dropdown-menu" style="float:left;">
+                <div class="dropbtn"><a href="index.html">Volunteer app</a> 
+                </div>
+                <div class="dropdown-menu-content" style="left:0;">
+                    <a href="index.html">Home</a>
+                    <a href="category.html">Category</a>
+                    <a href="signup.html">Sign in</a> 
+                </div>
+            </div>
+        </div>
+        <div class="nav-search">
+            <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="nav-login">
+
+        </div>
+    </div>
+
+    <div class="nav-small">
+        <div class="nav-logo">
+            <div class="dropdown-menu" style="float:left;">
+                <div class="dropbtn"><a href="index.html">VA</a> 
+                </div>
+                <div class="dropdown-menu-content" style="left:0;">
+                    <a href="index.html">Home</a>
+                    <a href="category.html">Category</a>
+                    <a href="signup.html">Sign in</a> 
+                </div>
+            </div>
+        </div>
+        <div class="nav-search">
+            <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="nav-login">
+
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="signup-main-div">
+
+
+
+
+            <div class="content-main">
+                <div class="content-main-inner">
+                    <div class="content-main-left"></div>
+
+                    <div class="content-main-inner">
+                        <div class="opportunity-flex-container">
+                            <div class="opportunity-flex-container-left">
+                                <div class="opportunity-content-main-left">
+                                    <div class="image">
+                                        <img class="mySlides" src="dog.jpg" style="width:100%" alt="welcome banner">
+                                        <img class="mySlides" src="eldery.jpg" style="width:100%" alt="welcome banner">
+                                        <img class="mySlides" src="community.png" style="width:100%" alt="welcome banner">
+                                        <img class="mySlides" src="school.jpg" style="width:100%" alt="welcome banner">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                            <div class="opportunity-flex-container-right">
+                                <div class="opportunity-content-main-right">
+
+
+
+                                    <div class="contact-form">
+                                        <div class="featured"> <span id="heading">Sign in</span>
+                                        </div>
+
+                                        <!--  -->
+                                        <div class="form_div">
+                                            <div class="container">
+                                                <div id="sign-in-div">
+                                                    <form action="/action_page.php">
+
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="email">Email</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <!-- <input type="email" id="lname" name="email" placeholder="Your last email.."> -->
+                                                                <input type="text" id="email" name="phone" placeholder="Your last email..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="phone">Password</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row" style="text-align: center; padding-top: 30px;">
+                                                            <input type="submit" value="Sign in" class="signup-bttn" style="background-color:#70ec84;">
+                                                        </div>
+                                                    </form>
+
+                                                    <!--  -->
+                                                    <div class="featured" style="border:none;">
+                                                        <span style="font-size: 14px;">Sign up here if you dont have an account </span>
+                                                        <div style="width:50%;margin: 0 auto;background-color: #11bbee;" class="signup-bttn" id="show-sign-up-div" onclick="showSignUpIn()">
+                                                            Sign Up
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="sign-up-div" style="display:none;">
+                                                    <form action="/action_page.php">
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="fname">First Name</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="lname">Last Name</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="email">Email</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <!-- <input type="email" id="lname" name="email" placeholder="Your last email.."> -->
+                                                                <input type="text" id="email" name="phone" placeholder="Your last email..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="phone">Phone</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="phone">Password</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="phone" name="phone" placeholder="A password..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-25">
+                                                                <label for="phone">Confirm Password</label>
+                                                            </div>
+                                                            <div class="col-75">
+                                                                <input type="text" id="phone" name="phone" placeholder="Confirm your password..">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row" style="text-align: center; padding-top: 30px;">
+                                                            <input type="submit" value="Sign up" class="signup-bttn" style="background-color:#70ec84;">
+                                                        </div>
+                                                    </form>
+
+
+                                                    <div class="featured" style="border:none;">
+                                                        <span style="font-size: 14px;">if you have an account Sign in here   </span>
+                                                        <div style="width:50%;margin: 0 auto;background-color: #11bbee;" class="signup-bttn" id="show-sign-up-div" onclick="showSignUpIn()">
+                                                            Sign in
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-logo">
+                <div class="nav-logo">
+                    <a href="index.html">Volunteer app</a>
+                </div>
+            </div>
+            <div style="color:white; padding:10px;">
+                <span style="float:left; font-size:12px; color:white;padding:10px;padding-top: 20px;"> copyright 2019 </span> 
+                <span style="float:right; color:white;padding:10px;"> <a href="instagram.html" class="social-media">IG</a></span>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <script>
+        function showSignUpIn() {
+            var x = document.getElementById("sign-up-div").style.display;
+            var y = document.getElementById("sign-in-div").style.display;
+            if (x == "block") {
+                document.getElementById("sign-in-div").style.display = "block";
+                document.getElementById("sign-up-div").style.display = "none";
+                document.getElementById("heading").innerHTML = "Sign in";
+            } else {
+                document.getElementById("sign-in-div").style.display = "none";
+                document.getElementById("sign-up-div").style.display = "block";
+                document.getElementById("heading").innerHTML = "Sign up";
+            }
+        }
+
+
+         //
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
